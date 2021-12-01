@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+.menu-superior{
+    height: 50px;
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-superior > .botao-nav{
+    padding: 15px;
+    background-color: rgb(255, 251, 38);
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color:rgb(21, 21, 24);
+}
+
+.botao-nav:hover{
+    color:rgb(161, 23, 161);
+    transition-duration: 0.5s;
+}
+
+/*Container de conteudo*/
+.container{
+    display: flex;
+    min-height: 90vh;
+    font-family: 'Merriweather', serif; /*Header + Rodapé*/
+}
+
+/*Menu lateral esquerdo*/
+.menu-lateral-esquerdo{
+    flex: 1 0 300px;
+}
+
+.menu-lateral-esquerdo > a{
+    margin-top: 30px;
+}
+
+/*Menu lateral direito*/
+.menu-lateral-direito{
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+/*Estilo comum dos menus*/
+.menu-cor{
+    background-color: rgb(150, 115, 44);
+}
+
+.links{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color:rgb(238, 110, 200);
+    font-size: 1.5em;
+}
+.citacao{
+    font-style: oblique;
+    padding: 10px;
+}
+
+/*Parte principal*/
+.conteudo{
+    flex-grow: 3;
+    background-color: rgb(27, 26, 26);
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 0 0 33%;
+}
+
+.foto{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    transition-duration: 0.3s;
+}
+
+.foto:hover{
+    transform: scale(2);
+}
+
+/*Rodapé*/
+.rodape{
+    background-color: rgb(27, 26, 26);  
+    width: 100vw;
+    text-align: center;
+    height: 50px;
+}
+
+.texto-rodape{
+    color: wheat;
+    padding: 10px;
+    font-family: 'M PLUS 1', sans-serif;
+}

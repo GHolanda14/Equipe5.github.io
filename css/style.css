@@ -53,6 +53,7 @@
 /*Estilo comum dos menus*/
 .menu-cor{
     background-color: rgb(150, 115, 44);
+    text-align: justify;
 }
 
 .links{

@@ -8,5 +8,13 @@ pipeline {
       }
     }
 
+    stage('Teste') {
+      steps {
+        echo 'Iniciando teste...'
+        sleep(time: 15, unit: 'MINUTES')
+        build(job: 'unicorn-test', propagate: true)
+      }
+    }
+
   }
 }

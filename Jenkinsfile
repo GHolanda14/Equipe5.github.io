@@ -11,7 +11,7 @@ pipeline {
     stage('Teste') {
       steps {
         echo 'Iniciando teste...'
-        sleep(time: 15, unit: 'MINUTES')
+        sleep(time: 15, unit: 'SECONDS')
         build(job: 'unicorn-test', propagate: true)
       }
     }

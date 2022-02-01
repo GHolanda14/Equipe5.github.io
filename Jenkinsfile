@@ -12,8 +12,8 @@ pipeline {
       steps {
         echo 'Iniciando teste...'
         sleep(time: 15, unit: 'SECONDS')
-        build(job: 'Teste padrão', propagate: true)
-        mail(to: 'gabrielbotelho@alu.ufc.br', subject: 'Teste', body: 'Você é o responsável pelos testes, confira tudo!')
+        build(job: 'unicorn-test', propagate: true)
+        mail(to: 'gabrielbotelho@alu.ufc.br', subject: 'Teste', body: 'Voce e o responsavel pelos testes, confira tudo!')
       }
     }
 
